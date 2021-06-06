@@ -22,7 +22,7 @@ export const coverLightenTemplate = `
         return color.replace(')',  '--lighten-' + parseInt(amount) + ')')
       }
 
-      return Lighten(color, amount)
+      return lighten(color, amount)
     }
   })()\`;
 }
