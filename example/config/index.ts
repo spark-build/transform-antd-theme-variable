@@ -1,0 +1,17 @@
+// config/index.ts  该文件需要自己创建
+import { defineConfig } from '@spark-build/vite-plugin-react-auto-config/lib/core';
+
+/**
+ * 跟 umi 一样的配置方式
+ *
+ * @see https://umijs.org/zh-CN/config
+ */
+export default defineConfig({
+  routes: [
+    {
+      path: '/',
+      component: '@/App',
+    },
+  ],
+  antd: {},
+});

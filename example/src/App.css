@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app .sketch-picker {
+  box-shadow: none !important;
+}
+
+.components {
+  flex: 1;
+  margin-right: 24px;
+}
+
+.components > .ant-card {
+  width: 100%;
+  margin-bottom: 24px;
+}
