@@ -1,0 +1,47 @@
+{
+  "name": "@spark-build/transform-antd-theme-variable",
+  "version": "0.0.0",
+  "description": "将 antd 的变量转化为 css variable，以实现无 runtime 的实时动态主题切换",
+  "author": "atzcl0310@gmail.com",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "transform-antd-theme-variable": "dist/bin/index.js",
+    "generateThemeVariable": "dist/bin/generateThemeVariable.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc --build tsconfig.json",
+    "dev:inspect": "yarn ts-node-dev --inspect=9229 --respawn --files src --initialRun --force",
+    "dev:inspect-noCoverage": "yarn ts-node-dev --inspect=9229 --respawn --files src --initialRun",
+    "generateThemeVariable:inspect": "yarn ts-node-dev --inspect=9229 --respawn --files src/generateThemeVariable --initialRun",
+    "publishPkg": "yarn build && npm version patch && npm publish"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.0",
+    "postcss-less": "^4.0.1",
+    "@spark-build/lint": "^0.0.16",
+    "@types/fs-extra": "^9.0.11",
+    "@types/node": "^15.12.1",
+    "antd": "4.16.1",
+    "cross-env": "^7.0.3",
+    "fast-glob": "^3.2.5",
+    "less": "^4.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "4.3.2"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0",
+    "antd": "^4.0.0"
+  }
+}

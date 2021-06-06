@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "ES2019",
+    "sourceMap": false,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "incremental": true,
+    "alwaysStrict": true,
+    "charset": "utf8",
+    "newLine": "lf",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "stripInternal": true,
+    "typeRoots": ["node_modules/@types", "src/typings"]
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "tslint:latest",
+    "tslint-config-prettier",
+    "example"
+  ],
+  "include": ["**/*.ts", "**/*.d.ts"]
+}
