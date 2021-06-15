@@ -18,7 +18,9 @@ import {
   TimePicker,
   Select,
   InputNumber,
+  Switch,
 } from 'antd';
+import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 
 const { Text, Link } = Typography;
 const { Step } = Steps;
@@ -318,6 +320,23 @@ export const Components: React.FC<{}> = () => {
           <Search placeholder="input search text" allowClear style={{ width: 200 }} />
           <Search placeholder="input search text" enterButton />
           <TextArea placeholder="Controlled autosize" autoSize={{ minRows: 3, maxRows: 5 }} />
+        </Space>
+      </Card>
+
+      <Card title="Input">
+        <Space direction="vertical">
+          <Switch checkedChildren="开启" unCheckedChildren="关闭" defaultChecked />
+          <br />
+          <Switch checkedChildren="1" unCheckedChildren="0" />
+          <br />
+          <Switch
+            checkedChildren={<CheckOutlined />}
+            unCheckedChildren={<CloseOutlined />}
+            defaultChecked
+          />
+          <Switch loading defaultChecked />
+          <br />
+          <Switch size="small" loading />
         </Space>
       </Card>
     </>
