@@ -1,6 +1,6 @@
 {
   "name": "@spark-build/transform-antd-theme-variable",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "将 antd 的变量转化为 css variable，以实现无 runtime 的实时动态主题切换",
   "author": "atzcl0310@gmail.com",
   "license": "MIT",
