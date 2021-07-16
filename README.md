@@ -49,5 +49,5 @@ yarn generateThemeVariable
 #### 示例
 
 ```bash
-git clone https://github.com/spark-build/transform-antd-theme-variable.git && cd transform-antd-theme-variable && yarn && yarn build && cd example && yarn && yarn dev
+git clone https://github.com/spark-build/transform-antd-theme-variable.git && cd transform-antd-theme-variable && yarn && yarn build && cd example && yarn && yarn generateVariable && yarn dev
 ```
