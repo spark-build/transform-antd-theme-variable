@@ -32,7 +32,7 @@
   "devDependencies": {
     "@spark-build/lint": "^0.0.16",
     "@types/fs-extra": "^9.0.12",
-    "@types/node": "^16.3.2",
+    "@types/node": "^16.3.3",
     "antd": "4.16.7",
     "cross-env": "^7.0.3",
     "fast-glob": "^3.2.7",
